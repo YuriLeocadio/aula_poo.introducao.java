@@ -69,4 +69,29 @@ public class Lista01 {
         );
         sc.close();
     }
+
+    void ex5(){
+        int largura;
+        int comprimento;
+        int area;
+        double valorM2;
+        Double valorTotal;
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Informe a largura do terreno: ");
+        largura = sc.nextInt();
+
+        System.out.println("Informe o comprimento do terreno: ");
+        comprimento = sc.nextInt();
+
+        area = largura * comprimento;
+        
+        System.out.println("Digite o valor do m² em reais: R$");
+        valorM2 = sc.nextDouble();
+        valorTotal = valorM2 * area;
+        System.out.println("O valor total do terreno é R$" + String.format("%.2f", valorTotal));
+
+        sc.close();
+    }
 }
