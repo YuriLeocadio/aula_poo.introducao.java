@@ -114,4 +114,39 @@ public class Lista01 {
         sc.close();
 
     }
+
+    void ex7(){
+        String nome;
+        Double nota1;
+        Double nota2;
+        Double nota3;
+        Double nota4;
+        Double media;
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Digite seu nome: ");
+        nome = sc.nextLine();
+
+        System.out.println("Digite a nota do 1º bimestre: ");
+        nota1 = sc.nextDouble();
+
+        System.out.println("Digite a nota do 2º bimestre: ");
+        nota2 = sc.nextDouble();
+
+        System.out.println("Digite a nota do 3º bimestre: ");
+        nota3 = sc.nextDouble();
+
+        System.out.println("Digite a nota do 4º bimestre: ");
+        nota4 = sc.nextDouble();
+
+        media = (nota1 + nota2 + nota3 + nota4) / 4;
+
+        if (media>=6){
+            System.out.println("O aluno " + nome + " teve uma média de: " + media + " e está aprovado!");
+        }   else{
+                System.out.println("O aluno " + nome + " teve uma média de: " + media + " e está reprovado!");
+            }
+        sc.close();
+    }
 }
