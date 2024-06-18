@@ -110,7 +110,7 @@ public class Lista01 {
 
         consumoMedio = distancia / litros;
 
-        System.out.println("O consumo médio é de: " + consumoMedio + " Km/L");
+        System.out.println("O consumo médio é de: " + String.format("%.2f", consumoMedio) + " Km/L");
         sc.close();
 
     }
