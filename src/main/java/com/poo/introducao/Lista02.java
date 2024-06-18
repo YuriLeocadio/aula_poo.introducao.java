@@ -19,4 +19,25 @@ public class Lista02 {
             System.out.println("O ´numero digitado é ímpar");
         }
     }
+
+    void ex2(){
+        double num1;
+        double num2;
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Digite um número: ");
+        num1 = sc.nextDouble();
+
+        System.out.println("Digite outro número: ");
+        num2 = sc.nextDouble();
+
+        if(num1 > num2){
+            System.out.println("o número " + num1 + " é maior que o número " + num2);
+        } else if(num1 < num2){
+            System.out.println("o número " + num1 + " é menor que o número " + num2);
+        } else {
+            System.out.println("Os número digitados são iguais!");
+        }
+    }
 }
