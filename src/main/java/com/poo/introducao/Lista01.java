@@ -94,4 +94,24 @@ public class Lista01 {
 
         sc.close();
     }
+
+    void ex6(){
+        Double distancia;
+        Double litros;
+        Double consumoMedio;
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Digite a distância percorrida em km: ");
+        distancia = sc.nextDouble();
+
+        System.out.println("Digite o gasto com combustível em litros: ");
+        litros = sc.nextDouble();
+
+        consumoMedio = distancia / litros;
+
+        System.out.println("O consumo médio é de: " + consumoMedio + " Km/L");
+        sc.close();
+
+    }
 }
