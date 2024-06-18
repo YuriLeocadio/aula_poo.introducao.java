@@ -24,4 +24,19 @@ public class Lista01 {
         System.out.println("A soma de " + num1 + " + " + num2 + " é igual à: " + resultado);
         sc.close();
     }
+
+    void ex2(){
+        String nome;
+        String sobrenome;
+
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("Digite seu nome: ");
+        nome = sc.nextLine();
+
+        System.out.println("Digite seu sobrenome: ");
+        sobrenome = sc.nextLine();
+
+        System.out.println("Seja Bem-Vindo ao nosso programa " + nome + " " + sobrenome + " :)");
+    }
 }
