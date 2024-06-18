@@ -149,4 +149,22 @@ public class Lista01 {
             }
         sc.close();
     }
+
+    void ex8(){
+        double tempFahrenheit;
+        double tempCelsius;
+        
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Digite a temperatura em Fahrenheit °F para ser convertida em Celsius °C: ");
+        tempFahrenheit = sc.nextDouble();
+
+        tempCelsius = (tempFahrenheit - 32)/1.8;
+
+        System.out.println("Temperatura em °F: " + String.format("%.2f", tempFahrenheit) + "°F");
+
+        System.out.println("Temperatura em °C: " + String.format("%.2f", tempCelsius) + "°C");
+
+        sc.close();
+    }
 }
