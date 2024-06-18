@@ -38,6 +38,7 @@ public class Lista01 {
         sobrenome = sc.nextLine();
 
         System.out.println("Seja Bem-Vindo ao nosso programa " + nome + " " + sobrenome + " :)");
+        sc.close();
     }
 
     void ex3(){
@@ -53,5 +54,19 @@ public class Lista01 {
 
         dolar = reais / 5.25;
         System.out.println("R$" + String.format("%.2f", reais) + " convertidos em dólar equivalem a: " + String.format("%.2f", dolar));
+        sc.close();
+    }
+
+    void ex4(){
+        int numeroDigitado;
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Digite um número inteiro: ");
+        numeroDigitado = sc.nextInt();
+
+        System.out.println("O antecessor de " + numeroDigitado + " é: " + (numeroDigitado - 1) + " e o sucessor é: " + (numeroDigitado + 1)
+        );
+        sc.close();
     }
 }
