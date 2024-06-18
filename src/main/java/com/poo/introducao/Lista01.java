@@ -39,4 +39,19 @@ public class Lista01 {
 
         System.out.println("Seja Bem-Vindo ao nosso programa " + nome + " " + sobrenome + " :)");
     }
+
+    void ex3(){
+        Double reais;
+        Double dolar;
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Olá! Sou uma calculadora de conversão de Real para Dolar.");
+
+        System.out.println("Digite um valor em reais (R$): ");
+        reais = sc.nextDouble();
+
+        dolar = reais / 5.25;
+        System.out.println("R$" + String.format("%.2f", reais) + " convertidos em dólar equivalem a: " + String.format("%.2f", dolar));
+    }
 }
