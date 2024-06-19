@@ -6,10 +6,20 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class IntroducaoApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(IntroducaoApplication.class, args);
-		
-		Lista01 lista = new Lista01();
-		lista.ex6();
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(IntroducaoApplication.class, args);
+
+        LimpaTerminal.limpa_terminal();
+        Lista02 lista = new Lista02();
+        lista.ex1();
+    }
+
+    static class LimpaTerminal {
+        static void limpa_terminal() {
+            // Imprimir 50 linhas em branco para "limpar" o terminal
+            for (int i = 0; i < 50; i++) {
+                System.out.println();
+            }
+        }
+    }
 }
