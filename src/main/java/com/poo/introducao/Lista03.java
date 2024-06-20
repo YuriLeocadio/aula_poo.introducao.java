@@ -103,4 +103,86 @@ public class Lista03 {
         }
         sc.close();
     }
+
+    public void ex5() {
+        String login = "adm";
+        String senha = "123";
+        String loginDigitado;
+        String senhaDigitada;
+        int tentativas = 0;
+
+        Scanner sc = new Scanner(System.in);
+        
+        while (tentativas < 3) {
+            System.out.println("Digite o login: ");
+            loginDigitado = sc.nextLine();
+            System.out.println("Digite a senha: ");
+            senhaDigitada = sc.nextLine();
+            
+            if (loginDigitado.equals(login) && senhaDigitada.equals(senha)) {
+                System.out.println("Login bem-sucedido!");
+                break;
+            } else {
+                if (!loginDigitado.equals(login) && !senhaDigitada.equals(senha)) {
+                    System.out.println("Login e senha incorretos");
+                }
+                else if (!loginDigitado.equals(login)) {
+                    System.out.println("Login incorreto.");
+                }
+                else if (!senhaDigitada.equals(senha)) {
+                    System.out.println("Senha incorreta.");
+                }
+                tentativas++;
+                if (tentativas == 2) {
+                    System.out.println("Última tentativa, mais um erro seu acesso será bloqueado!");
+                }
+            }
+        }
+        
+        if (tentativas == 3) {
+            System.out.println("Acesso bloqueado após 3 tentativas erradas.");
+        }
+        sc.close();
+    }
+
+    public void ex6() {
+        int andares;
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Digite o número de andares da pirâmide: ");
+        andares = sc.nextInt();
+        
+        for (int i = 1; i <= andares; i++) {
+            for (int espacos = 1; espacos <= andares - i; espacos++) {
+                System.out.print(" ");
+            }
+            for (int asteristicos = 1; asteristicos <= (2 * i - 1); asteristicos++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        sc.close();
+    }
+
+    public void ex7() {
+        int largura;
+        int altura;
+        
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Digite a largura do retângulo: ");
+        largura = sc.nextInt();
+
+        System.out.println("Digite a altura do retângulo: ");
+        altura = sc.nextInt();
+        
+        for (int i = 0; i < altura; i++) {
+            for (int j = 0; j < largura; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        sc.close();
+    }
 }
