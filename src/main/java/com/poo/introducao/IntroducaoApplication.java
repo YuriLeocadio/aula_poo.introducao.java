@@ -11,7 +11,7 @@ public class IntroducaoApplication {
 
         LimpaTerminal.limpa_terminal();
         Lista02 lista = new Lista02();
-        lista.ex1();
+        lista.ex8();
     }
 
     static class LimpaTerminal {
