@@ -70,10 +70,35 @@ public class Lista03 {
         maior = Math.max(num1, num2);
         
         System.out.println("Números pares entre " + menor + " e " + maior + ":");
-        
+
         for (int i = menor + 1; i < maior; i++) {
             if (i % 2 == 0) {
                 System.out.println(i);
+            }
+        }
+        sc.close();
+    }
+
+    public void ex4() {
+        int numeroEscolhido;
+        int tentativa;
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Escolha um número (Jogador 1): ");
+        numeroEscolhido = sc.nextInt();
+        
+        System.out.println("Adivinhe o número (Jogador 2): ");
+        while (true) {
+            tentativa = sc.nextInt();
+            if (tentativa == numeroEscolhido) {
+                System.out.println("Parabéns! Você acertou.");
+                break;
+            } else if (Math.abs(tentativa - numeroEscolhido) <= 2) {
+                System.out.println("Quase lá!");
+            } else if (tentativa < numeroEscolhido) {
+                System.out.println("Muito baixo.");
+            } else {
+                System.out.println("Muito alto.");
             }
         }
         sc.close();
