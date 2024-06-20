@@ -189,7 +189,7 @@ public class IntroducaoApplication {
                 lista.ex2();
                 break;
 
-            /*case 3:
+            case 3:
                 lista.ex3();
                 break;
 
@@ -197,7 +197,7 @@ public class IntroducaoApplication {
                 lista.ex4();
                 break;
 
-            case 5:
+            /*case 5:
                 lista.ex5();
                 break;
 
