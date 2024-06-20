@@ -177,7 +177,7 @@ public class IntroducaoApplication {
     private static void executarExercicio(Lista04 lista, Scanner sc) {
         int exercicio;
         
-        System.out.println("Escolha o exercício (1-8) da Lista 04: ");
+        System.out.println("Escolha o exercício (1-5) da Lista 04: ");
         exercicio = sc.nextInt();
 
         switch (exercicio) {
