@@ -37,4 +37,18 @@ public class Lista03 {
         
         sc.close();
     }
+
+    public void ex2() {
+        int numero;
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Digite um número para ver a tabuada: ");
+        numero = sc.nextInt();
+        
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(numero + " x " + i + " = " + (numero * i));
+        }
+        sc.close();
+    }
 }

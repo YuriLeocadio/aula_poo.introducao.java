@@ -142,11 +142,11 @@ public class IntroducaoApplication {
                 lista.ex1();
                 break;
 
-            /*case 2:
+            case 2:
                 lista.ex2();
                 break;
 
-            case 3:
+            /*case 3:
                 lista.ex3();
                 break;
 
