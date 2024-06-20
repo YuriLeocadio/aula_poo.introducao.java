@@ -197,23 +197,10 @@ public class IntroducaoApplication {
                 lista.ex4();
                 break;
 
-            /*case 5:
+            case 5:
                 lista.ex5();
                 break;
-
-            case 6:
-                lista.ex6();
-                break;
-                
-            case 7:
-                lista.ex7();
-                break;
-
-            case 8:
-                lista.ex8();
-                break;
-
-            */default:
+            default:
                 System.out.println("Exercício não encontrado!");
         }
     }
