@@ -12,4 +12,23 @@ public class Lista04 {
 
         System.out.println("Fechamento das vendas do dia: R$" + totalVendas);
     }
+
+    void ex2() {
+        Double[] vendas = { 150.50, 320.75, 80.20, 210.30, 430.10 };
+
+        Double menorValor = Double.MAX_VALUE;
+        Double maiorValor = Double.MIN_VALUE;
+
+        for (int i = 0; i < vendas.length; i++) {
+            if (vendas[i] < menorValor) {
+                menorValor = vendas[i];
+            }
+            if (vendas[i] > maiorValor) {
+                maiorValor = vendas[i];
+            }
+        }
+
+        System.out.println("Menor valor de venda do dia: R$" + String.format("%.2f", menorValor));
+        System.out.println("Maior valor de venda do dia: R$" + String.format("%.2f", maiorValor));
+    }
 }
