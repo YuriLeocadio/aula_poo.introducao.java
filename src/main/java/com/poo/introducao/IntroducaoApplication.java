@@ -34,10 +34,10 @@ public class IntroducaoApplication {
                 executarExercicio(lista03, sc);
                 break;
 
-            /*case 4:
+            case 4:
                 Lista04 lista04 = new Lista04();
                 executarExercicio(lista04, sc);
-                break;*/
+                break;
 
             default:
                 System.out.println("Lista não encontrada!");
@@ -174,7 +174,7 @@ public class IntroducaoApplication {
         }
     }
 
-    /*private static void executarExercicio(Lista04 lista, Scanner sc) {
+    private static void executarExercicio(Lista04 lista, Scanner sc) {
         int exercicio;
         
         System.out.println("Escolha o exercício (1-8) da Lista 04: ");
@@ -185,7 +185,7 @@ public class IntroducaoApplication {
                 lista.ex1();
                 break;
 
-            case 2:
+            /*case 2:
                 lista.ex2();
                 break;
 
@@ -213,8 +213,8 @@ public class IntroducaoApplication {
                 lista.ex8();
                 break;
 
-            default:
+            */default:
                 System.out.println("Exercício não encontrado!");
         }
-    }*/
+    }
 }
