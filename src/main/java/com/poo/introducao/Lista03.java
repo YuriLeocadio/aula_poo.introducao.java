@@ -45,9 +45,36 @@ public class Lista03 {
 
         System.out.println("Digite um número para ver a tabuada: ");
         numero = sc.nextInt();
-        
+
         for (int i = 1; i <= 10; i++) {
             System.out.println(numero + " x " + i + " = " + (numero * i));
+        }
+        sc.close();
+    }
+
+    public void ex3() {
+        int num1;
+        int num2;
+        int menor;
+        int maior;
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Digite o primeiro número: ");
+        num1 = sc.nextInt();
+
+        System.out.println("Digite o segundo número: ");
+        num2 = sc.nextInt();
+        
+        menor = Math.min(num1, num2);
+        maior = Math.max(num1, num2);
+        
+        System.out.println("Números pares entre " + menor + " e " + maior + ":");
+        
+        for (int i = menor + 1; i < maior; i++) {
+            if (i % 2 == 0) {
+                System.out.println(i);
+            }
         }
         sc.close();
     }
