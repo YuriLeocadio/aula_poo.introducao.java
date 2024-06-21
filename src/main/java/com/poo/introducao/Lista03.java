@@ -38,7 +38,7 @@ public class Lista03 {
         sc.close();
     }
 
-    public void ex2() {
+    void ex2() {
         int numero;
 
         Scanner sc = new Scanner(System.in);
@@ -52,7 +52,7 @@ public class Lista03 {
         sc.close();
     }
 
-    public void ex3() {
+    void ex3() {
         int num1;
         int num2;
         int menor;
@@ -79,7 +79,7 @@ public class Lista03 {
         sc.close();
     }
 
-    public void ex4() {
+    void ex4() {
         int numeroEscolhido;
         int tentativa;
         Scanner sc = new Scanner(System.in);
@@ -104,7 +104,7 @@ public class Lista03 {
         sc.close();
     }
 
-    public void ex5() {
+    void ex5() {
         String login = "adm";
         String senha = "123";
         String loginDigitado;
@@ -145,7 +145,7 @@ public class Lista03 {
         sc.close();
     }
 
-    public void ex6() {
+    void ex6() {
         int andares;
 
         Scanner sc = new Scanner(System.in);
@@ -165,7 +165,7 @@ public class Lista03 {
         sc.close();
     }
 
-    public void ex7() {
+    void ex7() {
         int largura;
         int altura;
         
